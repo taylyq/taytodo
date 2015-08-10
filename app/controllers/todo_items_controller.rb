@@ -13,6 +13,7 @@ class TodoItemsController < ApplicationController
 		else
 			flash[:error] = "Todo List item could not be deleted"
 		end
+		redirect_to @todo_list
 	end
 
 	private
